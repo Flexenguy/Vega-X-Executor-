@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22730E44-D38C-4B27-B7A1-369CE4A997CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vega_X</RootNamespace>
+    <AssemblyName>Vega X</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Vega X.ico</ApplicationIcon>
+    <StartupObject>Vega_X.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EasyExploits">
+      <HintPath>..\..\..\Downloads\Vega X - v2.1.8a_1HISt0aiYqLZkby\Vega X - v2.1.8a\Dumps\EasyExploits.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\Downloads\Vega X - v2.1.8a_1HISt0aiYqLZkby\Vega X - v2.1.8a\Dumps\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WeAreDevs_API">
+      <HintPath>..\..\..\Downloads\Vega X - v2.1.8a_1HISt0aiYqLZkby\Vega X - v2.1.8a\Dumps\WeAreDevs_API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustableScripts.Designer.vb">
+      <DependentUpon>AdjustableScripts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustableScripts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlappyVega.Designer.vb">
+      <DependentUpon>FlappyVega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlappyVega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions.vb" />
+    <Compile Include="Loader.Designer.vb">
+      <DependentUpon>Loader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniGame.Designer.vb">
+      <DependentUpon>MiniGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MiniGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Options.Designer.vb">
+      <DependentUpon>Options.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.vb" />
+    <Compile Include="Properties\Settings.Designer.vb">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RButton.vb" />
+    <Compile Include="ScriptHub.Designer.vb">
+      <DependentUpon>ScriptHub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptHub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScriptHub2.Designer.vb">
+      <DependentUpon>ScriptHub2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptHub2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScriptHub3.Designer.vb">
+      <DependentUpon>ScriptHub3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptHub3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScriptManager.Designer.vb">
+      <DependentUpon>ScriptManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleUI.Designer.vb">
+      <DependentUpon>SimpleUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.vb" />
+    <Compile Include="VegaX.Designer.vb">
+      <DependentUpon>VegaX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VegaX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdjustableScripts.resources" />
+    <EmbeddedResource Include="FlappyVega.resources" />
+    <EmbeddedResource Include="Loader.resources" />
+    <EmbeddedResource Include="MiniGame.resources" />
+    <EmbeddedResource Include="Options.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="ScriptHub.resources" />
+    <EmbeddedResource Include="ScriptHub2.resources" />
+    <EmbeddedResource Include="ScriptHub3.resources" />
+    <EmbeddedResource Include="ScriptManager.resources" />
+    <EmbeddedResource Include="SimpleUI.resources" />
+    <EmbeddedResource Include="UserControl1.resources" />
+    <EmbeddedResource Include="VegaX.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
